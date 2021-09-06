@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+ 
+ <div class="main">
+     <h2>Login Page</h2>
+ </div>   
+
+ <div class="main">
+    <div class="col-md-6 col-sm-12">
+       <div class="login-form">
+        <form name="loginForm" onsubmit="return validateForm()">
+            <div class="form-group">
+                Enter username : 
+                <input type="text" name="username" class="form-control" placeholder="User Name">
+                <label id="userId"></label>
+            </div>
+            <div class="form-group">
+                Enter password : 
+                <input type="password" name="password" class="form-control" placeholder="Password">
+                <label id="userPassword"></label>
+            </div>
+             <button type="submit" class="btn btn-black">Login</button>
+        </form>
+       </div>
+    </div>
+ </div>
+
+
+
+ <script src="formValidate.js"></script>
+</body>
+</html>
