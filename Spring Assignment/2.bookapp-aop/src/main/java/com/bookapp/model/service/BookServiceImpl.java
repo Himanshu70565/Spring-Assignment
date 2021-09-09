@@ -34,6 +34,7 @@ public class BookServiceImpl implements BookService {
 //	}
 
 
+	@Loggable
 	public void deleteBook(int id) {
 		bookDao.deleteBook(id);
 	}	

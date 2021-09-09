@@ -32,7 +32,6 @@ public class BookDaoImpl implements BookDao {
 		return booksMap.get(counter);
 	}
 
-	@Loggable
 	public void deleteBook(int id) {
 		booksMap.remove(id);
 	}
