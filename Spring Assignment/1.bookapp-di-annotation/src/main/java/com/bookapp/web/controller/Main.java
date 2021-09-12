@@ -14,7 +14,7 @@ public class Main {
 		
 		
 		ApplicationContext ctx=new ClassPathXmlApplicationContext("beans.xml");
-		BookService bookService = ctx.getBean("bookService",BookServiceImpl.class);
+		BookService bookService = ctx.getBean("bookService",BookService.class);
 		List<Book> allBooks = bookService.getAllBooks();
 		allBooks.forEach(b->System.out.println(b));
 		
